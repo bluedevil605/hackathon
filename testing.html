@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Relief Coordination</title>
+    <link rel="stylesheet" href="cssdis.css">
+</head>
+<body>
+
+    <!-- 🌍 Hero Section -->
+    <header class="hero">
+        <h1>Disaster Relief Coordination</h1>
+        <p>Connecting communities in times of crisis</p>
+        <a href="#report" class="cta-button">Report a Disaster</a>
+        
+    </header>
+
+    <!-- 🔥 Live Disaster Alerts -->
+    <section class="alerts">
+        <h2>Live Disaster Alerts</h2>
+        <div id="news-container">Loading latest disaster news...</div>
+    </section>
+
+    <!-- 🆘 Report a Disaster -->
+    <section class="report-form" id="report">
+        <h2>Report a Disaster</h2>
+        <form id="disasterForm">
+            <input type="text" id="disasterName" placeholder="Disaster Name" required>
+            <input type="text" id="location" placeholder="Location" required>
+            <textarea id="description" placeholder="Describe the situation" required></textarea>
+            <button type="submit">Submit Report</button>
+        </form>
+    </section>
+
+    <!-- 🏥 Relief Resources -->
+    <section class="resources">
+        <h2>Relief Resources</h2>
+        <table id="resourceTable">
+            <tr>
+                <th>Resource</th>
+                <th>Available</th>
+                <th>Needed</th>
+            </tr>
+        </table>
+    </section>
+
+    <!-- 📍 Google Map -->
+    <section class="map">
+        <h2>Affected Areas Map</h2>
+        <div id="map" style="width: 100%; height: 500px;"></div>
+
+  <div id="weather-info">
+    <h3>Weather Live Feed</h3>
+    <div id="weather-details"></div>
+  </div>
+    </section>
+
+    <!-- 👥 Volunteer and NGO Login -->
+    <section class="login" id="login">
+        <h2>Login</h2>
+        <div class="login-container">
+            <div class="login-box">
+                <h3>Volunteer Login</h3>
+                <form id="volunteerLoginForm">
+                    <input type="email" id="volunteerEmail" placeholder="Email" required>
+                    <input type="password" id="volunteerPassword" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            <div class="login-box">
+                <h3>NGO Login</h3>
+                <form id="ngoLoginForm">
+                    <input type="email" id="ngoEmail" placeholder="Email" required>
+                    <input type="password" id="ngoPassword" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📚 Learn Section -->
+    <section class="learn" id="learn">
+        <h2>Learn</h2>
+        <p>Explore resources and training materials to prepare for and respond to disasters effectively.</p>
+        <ul>
+            <li><a href="#link1">Disaster Preparedness Guide</a></li>
+            <li><a href="#link2">First Aid Training</a></li>
+            <li><a href="#link3">Volunteer Best Practices</a></li>
+        </ul>
+    </section>
+
+    <!-- 💡 Resources Section -->
+    <section class="resources-info" id="resources">
+        <h2>Resources</h2>
+        <p>Access valuable resources to support disaster relief efforts, including manuals, checklists, and toolkits.</p>
+        <ul>
+            <li><a href="#resource1">Emergency Response Manual</a></li>
+            <li><a href="#resource2">Supply Checklist</a></li>
+            <li><a href="#resource3">Volunteer Toolkit</a></li>
+        </ul>
+    </section>
+
+    <!-- 💸 Donation Section -->
+    <section class="donation" id="donation">
+        <h2>Donation</h2>
+        <p>Your contributions can make a significant impact. Donate to support disaster relief efforts.</p>
+        <form id="donationForm">
+            <input type="number" id="donationAmount" placeholder="Donation Amount" required>
+            <input type="text" id="donorName" placeholder="Your Name" required>
+            <input type="email" id="donorEmail" placeholder="Your Email" required>
+            <button type="submit">Donate</button>
+        </form>
+    </section>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA83aTTBh37Vi3SitzthfJc3gHog2wQ84M&callback=initMap" async defer></script> 
+  <script src="app.js"></script>
+</body>
+</html>
