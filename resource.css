@@ -1,0 +1,104 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/* 🌍 Resources Section */
+.resources {
+    padding: 40px;
+    text-align: center;
+}
+
+.resources h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.resources p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+/* Individual Resource Section */
+.resource-section {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-section img {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.resource-section-content {
+    width: 45%;
+    text-align: left;
+}
+
+.resource-section h3 {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.resource-section p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.resource-section a {
+    background: #007BFF;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.resource-section a:hover {
+    background: #0056b3;
+}
+
+/* Hover Effects for Section */
+.resource-section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔄 Responsive Design */
+@media (max-width: 768px) {
+    .resources {
+        padding: 20px;
+    }
+
+    .resource-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .resource-section img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .resource-section-content {
+        width: 100%;
+    }
+}

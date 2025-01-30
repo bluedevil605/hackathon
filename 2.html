@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Waste Reduction App</title>
+    <link rel="stylesheet" href="3.css">
+</head>
+<body>
+
+    <header>
+        <h1>Food Waste Reduction</h1>
+    </header>
+
+    <main>
+        <!-- Food Donation Form -->
+        <section class="donation-form">
+            <h2>Donate Food</h2>
+            <form>
+                <input type="text" placeholder="Food Name" required>
+                <input type="text" placeholder="Quantity" required>
+                <input type="text" placeholder="Pickup Location" required>
+                <button type="submit">Donate</button>
+            </form>
+        </section>
+
+        <!-- List of Available Donations -->
+        <section class="donations-list">
+            <h2>Available Donations</h2>
+            <div class="donation-item">
+                <h3>Pizza</h3>
+                <p>Quantity: 5 boxes</p>
+                <p>Location: Downtown Restaurant</p>
+            </div>
+            <div class="donation-item">
+                <h3>Bread</h3>
+                <p>Quantity: 20 loaves</p>
+                <p>Location: Baker's Hub</p>
+            </div>
+        </section>
+
+        <!-- Google Map Section -->
+        <section class="map-container">
+            <h2>Find Food Donations Near You</h2>
+            <div id="map"></div>
+        </section>
+    </main>
+
+</body>
+</html>
