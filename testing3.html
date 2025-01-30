@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FANSA Membership Application</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #18314F;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: whitesmoke;
+        }
+
+        .container {
+            background-color: #18314F;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 800px; /* Adjust as needed */
+            color: whitesmoke;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            max-width: 300px; /* Or adjust as needed */
+            display: block;
+            margin: 0 auto;
+        }
+        .header h2 {
+            margin-top: 10px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"], /* For phone and fax */
+        select,
+        textarea {
+            width: calc(100% - 12px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        .address-fields {
+            display: flex;
+            gap: 10px; /* Space between city, state, postal code */
+        }
+        .address-fields > div {
+            flex: 1; /* Distribute space equally */
+        }
+
+        .submit-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+
+        .print-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .print-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .href{
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <img src="WhatsApp Image 2025-01-30 at 21,51,00-photoaidcom-cropped.jpeg" alt="FANSA Logo">  <h2>NGO Application Form</h2>
+            </div>
+
+
+        <div class="section">
+            <div class="section-title">Section 1: Basic Information</div>
+
+            <label for="orgName">Name of the Organization:</label>
+            <input type="text" id="orgName" name="orgName" required>
+
+            <label for="orgAcronym">Organization Acronym:</label>
+            <input type="text" id="orgAcronym" name="orgAcronym">
+
+            <label for="ngoStatus">Is your organization legally constituted as an NGO? (If yes, please provide details):</label>
+            <textarea id="ngoStatus" name="ngoStatus"></textarea>
+
+            <div class="address-fields">
+                <div>
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="state">
+                </div>
+                <div>
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city">
+                </div>
+                <div>
+                    <label for="postalCode">Postal Code:</label>
+                    <input type="text" id="postalCode" name="postalCode">
+                </div>
+            </div>
+
+            <label for="phone">Phone (including Country Code):</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="fax">Fax (including Country Code):</label>
+            <input type="tel" id="fax" name="fax">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="website">Website (if any):</label>
+            <input type="text" id="website" name="website">
+
+            <label for="skype">Skype ID (if any):</label>
+            <input type="text" id="skype" name="skype">
+
+            <label for="yearEstablished">Year of Establishment:</label>
+            <input type="text" id="yearEstablished" name="yearEstablished">
+
+            <label for="regNumber">Registration Number:</label>
+            <input type="text" id="regNumber" name="regNumber">
+
+            <label for="orgNature">If no, please specify nature of your organization:</label>
+            <input type="text" id="orgNature" name="orgNature">
+
+        </div>
+
+        <button type="submit" class="submit-button">Submit</button>
+
+        <div class="print-link">
+            <a href="#" onclick="window.print()">Print Form</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
